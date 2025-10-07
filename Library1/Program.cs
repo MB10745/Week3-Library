@@ -60,7 +60,12 @@ class Program
         // Create a new instance (object) of the Book class
         // Note how the object name differs from the class name
         Book book = new Book("C# for beginners", "Bill Gates", "1234567");
+        Book book1 = new Book("Ultimate C#","Microsoft","2233445");
 
-        book.DisplayInfo();
+        Console.WriteLine($"Book title: {book.Title}\nBook author: {book.Author}\nBook ISBN: {book.ISBN}");
+        Console.WriteLine();
+        Console.WriteLine($"Book title: {book1.Title}\nBook author: {book1.Author}\nBook ISBN: {book1.ISBN}");
+
+        //book.DisplayInfo();
     }
 }
