@@ -4,6 +4,13 @@
     string Author; //Second attribute
     string ISBN; //Third attribute
 
+    //Declaring a method
+    void Displayinfo()
+    {
+        Console.WriteLine($"Book Title: {Title}\nBook Author: {Author}\nBook ISBN: {ISBN}");
+        Console.WriteLine();
+    }
+
     static void Main(string[] args)
     {
         //Create new instance (object) of the Book class
@@ -19,5 +26,16 @@
         Console.WriteLine($"Book Title: {book.Title}");
         Console.WriteLine($"Book Author: {book.Author}");
         Console.WriteLine($"Book ISBN: {book.ISBN}");
+
+        //This is another book object
+        //Object name (instance) is 'book1' and NOT 'book'
+        Book book1 = new Book();
+        book1.Title = "C# Methods and classes";
+        book1.Author = "Microsoft";
+        book1.ISBN = "55667778";
+
+        //Output second book info to the console (using method)
+        book1.Displayinfo();
+        book.Displayinfo();
     }
 }
