@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Library1
+﻿namespace Library1
 {
     class Book
     {
@@ -35,12 +29,10 @@ namespace Library1
             this.isbn = bookISBN;
         }
 
-        /*public void DisplayInfo()
+        public void DisplayInfo()
         {
-            Console.WriteLine($"Book title: {Title}");
-            Console.WriteLine($"Book Author: {Author}");
-            Console.WriteLine($"Book ISBN: {ISBN}");
+            Console.WriteLine($"Book title: {Title}\nBook author: {Author}\nBook ISBN: {ISBN}");
             Console.WriteLine();
-        }*/
+        }
     }
 }

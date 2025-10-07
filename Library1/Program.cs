@@ -61,11 +61,14 @@ class Program
         // Note how the object name differs from the class name
         Book book = new Book("C# for beginners", "Bill Gates", "1234567");
         Book book1 = new Book("Ultimate C#","Microsoft","2233445");
+        Console.WriteLine("Currently available books");
+        book.DisplayInfo();
+        book1.DisplayInfo();
 
-        Console.WriteLine($"Book title: {book.Title}\nBook author: {book.Author}\nBook ISBN: {book.ISBN}");
-        Console.WriteLine();
-        Console.WriteLine($"Book title: {book1.Title}\nBook author: {book1.Author}\nBook ISBN: {book1.ISBN}");
-
-        //book.DisplayInfo();
+        Member member = new Member(1, "John Smith", "1 High Street", 0790090090);
+        Member member1 = new Member(2, "Mary Jones", "102 Garden Road", 0790345666);
+        Console.WriteLine("Current library members");
+        member.DisplayInfo();
+        member1.DisplayInfo();
     }
 }
