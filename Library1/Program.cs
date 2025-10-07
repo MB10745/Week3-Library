@@ -1,4 +1,4 @@
-﻿class Book
+﻿/*class Book
 {
     string Title; //First attribute
     string Author; //Second attribute
@@ -25,7 +25,7 @@
         //Note how object name differs from class name
         Book book = new Book("C# for beginners", "BillGates", "12345678");
 
-        /*//Create new instance (object) of the Book class
+        //Create new instance (object) of the Book class
         //Note how object name differs from class name
         Book book = new Book();
 
@@ -44,10 +44,23 @@
         Book book1 = new Book();
         book1.Title = "C# Methods and classes";
         book1.Author = "Microsoft";
-        book1.ISBN = "55667778";*/
+        book1.ISBN = "55667778";
 
         //Output book info to the console (using method)
         //book1.Displayinfo();
         book.Displayinfo();
+    }
+}*/
+
+using Library1;
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create a new instance (object) of the Book class
+        // Note how the object name differs from the class name
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
+
+        book.DisplayInfo();
     }
 }
